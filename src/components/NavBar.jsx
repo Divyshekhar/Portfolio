@@ -1,5 +1,6 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
+import { Link } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
@@ -7,54 +8,52 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import DarkModeTwoToneIcon from '@mui/icons-material/DarkModeTwoTone';
 
-const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
-function NavBar({darkTheme}) {
+const pages = [
+  { name: "About", path: '/about' },
+  { name: "Projects", path: '/projects' },
+  { name: "Contact", path: '/contact' }
+];
+
+
+function NavBar({ darkTheme, setDarkTheme }) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
   return (
-    <AppBar position="fixed" sx={{backgroundColor: darkTheme?'rgba(156,39,176,0.2)':'rgba(25,118,210,0.2)'}}>
+    <AppBar position="fixed" sx={{ backgroundColor: darkTheme ? 'rgba(156,39,176,0.2)' : 'rgba(25,118,210,0.2)' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href=""
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: darkTheme ? 'rgb(177, 215, 233)' : 'rgb(37,38,69)',
               textDecoration: 'none',
             }}
           >
+            {/* This is the desktop name */}
             Divyshekhar Sinha
           </Typography>
 
@@ -85,14 +84,18 @@ function NavBar({darkTheme}) {
               onClose={handleCloseNavMenu}
               sx={{ display: { xs: 'block', md: 'none' } }}
             >
+              {/* This is the small display menu items */}
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
+                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                  <Typography sx={{ textAlign: 'center' }}>
+                    <Link to={page.path} style={{ textDecoration: 'none', color: 'inherit' }}>
+                      {page.name}
+                    </Link>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -104,52 +107,42 @@ function NavBar({darkTheme}) {
               flexGrow: 1,
               fontFamily: 'monospace',
               fontWeight: 700,
+              fontSize: "19px",
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: darkTheme ? 'rgb(177, 215, 233)' : 'rgb(37,38,69)',
               textDecoration: 'none',
             }}
           >
-            Divyshekhar Sinha
+            {/* This is the small display name */}
+            Divyshekhar Sinha Small
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-                key={page}
+                key={page.name}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
+                sx={{
+                  my: 2,
+                  fontFamily: 'monospace',
+                  color: darkTheme ? 'rgb(177, 215, 233)' : 'rgb(37,38,69)',
+                  display: 'block'
+                }}
+              > 
+              {/* This is the Desktop Menu Items */}
+                <Link to={page.path} style={{ textDecoration: 'none', color: 'inherit' }}>
+                  {page.name}
+                </Link>
               </Button>
             ))}
           </Box>
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                {/* <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" /> */}
+            <Tooltip title={darkTheme ? "Light Mode" : "Dark Mode"}>
+              <IconButton onClick={() => {
+                setDarkTheme(prevState => !prevState)
+              }} sx={{ p: 0 }}>
+                <DarkModeTwoToneIcon sx={{ color: darkTheme ? 'rgb(177, 215, 233)' : 'rgb(37,38,69)' }} />
               </IconButton>
             </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography sx={{ textAlign: 'center' }}>{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
           </Box>
         </Toolbar>
       </Container>

@@ -1,8 +1,9 @@
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim";
+import zIndex from "@mui/material/styles/zIndex";
 
-const ParticlesComponent = ({darkTheme}) => {
+const ParticlesComponent = ({ darkTheme, setDarkTheme }) => {
   const [init, setInit] = useState(false);
 
   // Initialize the particles engine
@@ -55,8 +56,8 @@ const ParticlesComponent = ({darkTheme}) => {
           color: darkTheme ? "#61ff05" : "#1E2F97", // Link color based on theme
           distance: 150,
           enable: true,
-          opacity: 0.5,
-          width: 1.8,
+          opacity: 0.3,
+          width: 1.5,
         },
         move: {
           direction: "none",
@@ -75,7 +76,7 @@ const ParticlesComponent = ({darkTheme}) => {
           value: 150,
         },
         opacity: {
-          value: 1.0,
+          value: 0.3,
         },
         shape: {
           type: "circle",
@@ -89,7 +90,7 @@ const ParticlesComponent = ({darkTheme}) => {
     [darkTheme] // Recalculate options when darkTheme changes
   );
 
-  return <Particles id="tsparticles" init={particlesLoaded} options={options} />;
+  return <Particles id="tsparticles" init={particlesLoaded} options={options} />
 };
 
 export default ParticlesComponent;
