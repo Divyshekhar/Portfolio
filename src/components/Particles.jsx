@@ -1,8 +1,6 @@
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim";
-import zIndex from "@mui/material/styles/zIndex";
-
 const ParticlesComponent = ({ darkTheme, setDarkTheme }) => {
   const [init, setInit] = useState(false);
 
@@ -76,7 +74,7 @@ const ParticlesComponent = ({ darkTheme, setDarkTheme }) => {
           value: 150,
         },
         opacity: {
-          value: 0.3,
+          value: 0.5,
         },
         shape: {
           type: "circle",
