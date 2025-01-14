@@ -9,7 +9,7 @@ import NotFound from './pages/NotFound';
 import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
-    const [darkTheme, setDarkTheme] = useState(false);
+    const [darkTheme, setDarkTheme] = useState(true);
     return (
         <Router>
             <ParticlesComponent darkTheme = {darkTheme}  />

@@ -117,7 +117,7 @@ function NavBar({ darkTheme, setDarkTheme }) {
             Divyshekhar Sinha Small
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+           {pages.map((page) => (
               <Button
                 key={page.name}
                 onClick={handleCloseNavMenu}
