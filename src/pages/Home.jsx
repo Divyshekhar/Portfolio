@@ -109,7 +109,7 @@ function Home({ darkTheme }) {
                 </Grid>
                 <Grid item xs={6}>
                     <Typography sx={{ fontSize: '20px' }}>
-                        this is left
+                        Linkedin, Github, Twitter
                     </Typography>
                 </Grid>
 
