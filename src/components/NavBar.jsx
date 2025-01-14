@@ -35,7 +35,7 @@ function NavBar({ darkTheme, setDarkTheme }) {
   };
 
   return (
-    <AppBar position="fixed" sx={{ backgroundColor: darkTheme ? 'rgba(156,39,176,0.2)' : 'rgba(25,118,210,0.2)' }}>
+    <AppBar position="relative" sx={{ backgroundColor: darkTheme ? 'rgba(156,39,176,0.2)' : 'rgba(25,118,210,0.2)', top: "-10px", width: "100vw", left: '-10px' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography

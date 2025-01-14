@@ -22,14 +22,14 @@ const ParticlesComponent = ({ darkTheme, setDarkTheme }) => {
     () => ({
       background: {
         color: {
-          value: darkTheme ? "#000000" : "#ffffff", // Background color based on theme
+          value: darkTheme ? "#000000" : "rgb(186,216,182)", // Background color based on theme
         },
       },
       fpsLimit: 120,
       interactivity: {
         events: {
           onClick: {
-            enable: true,
+            enable: false,
             mode: "push",
           },
           onHover: {
@@ -48,10 +48,10 @@ const ParticlesComponent = ({ darkTheme, setDarkTheme }) => {
       },
       particles: {
         color: {
-          value: darkTheme ? "#61ff05" : "#1E2F97", // Particle color based on theme
+          value: darkTheme ? "#61ff05" : "#ffffff", // Particle color based on theme
         },
         links: {
-          color: darkTheme ? "#61ff05" : "#1E2F97", // Link color based on theme
+          color: darkTheme ? "#61ff05" : "#ffffff", // Link color based on theme
           distance: 150,
           enable: true,
           opacity: 0.3,
