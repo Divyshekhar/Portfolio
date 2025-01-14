@@ -26,7 +26,7 @@ function Home({ darkTheme }) {
                     <img
                         src={profile}
                         alt="Profile Picture"
-                        style={{ width: "60%", height: '86%', paddingBottom: 0, marginTop: "-60px", marginLeft: "40px", borderRadius: "20%" }}
+                        style={{ width: "400px", height: '400px', paddingBottom: 0, marginTop: "-60px", marginLeft: "60px", borderRadius: "50%", objectFit: "cover", overflow: "hidden" }}
                     />
 
                 </Grid>
