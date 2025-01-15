@@ -29,7 +29,7 @@ const ParticlesComponent = ({ darkTheme, setDarkTheme }) => {
       interactivity: {
         events: {
           onClick: {
-            enable: false,
+            enable: true,
             mode: "push",
           },
           onHover: {

@@ -95,6 +95,7 @@ function NavBar({ darkTheme, setDarkTheme }) {
                 </MenuItem>
               ))}
             </Menu>
+            
           </Box>
           <Typography
             variant="h5"
@@ -116,31 +117,13 @@ function NavBar({ darkTheme, setDarkTheme }) {
             {/* This is the small display name */}
             Divyshekhar Sinha Small
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-           {pages.map((page) => (
-              <Button
-                key={page.name}
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 2,
-                  fontFamily: 'monospace',
-                  color: darkTheme ? 'rgb(177, 215, 233)' : 'rgb(37,38,69)',
-                  display: 'block'
-                }}
-              > 
-              {/* This is the Desktop Menu Items */}
-                <Link to={page.path} style={{ textDecoration: 'none', color: 'inherit' }}>
-                  {page.name}
-                </Link>
-              </Button>
-            ))}
-          </Box>
-          <Box sx={{ flexGrow: 0 }}>
+          
+          <Box sx={{ flexGrow: 1,  display:'flex', justifyContent: 'end'}}>
             <Tooltip title={darkTheme ? "Light Mode" : "Dark Mode"}>
               <IconButton onClick={() => {
                 setDarkTheme(prevState => !prevState)
               }} sx={{ p: 0 }}>
-                <DarkModeTwoToneIcon sx={{ color: darkTheme ? 'rgb(177, 215, 233)' : 'rgb(37,38,69)' }} />
+                <DarkModeTwoToneIcon sx={{ color: darkTheme ? 'rgb(177, 215, 233)' : 'rgb(37,38,69)', }} />
               </IconButton>
             </Tooltip>
           </Box>
