@@ -10,7 +10,9 @@ import Express_icon from '../assets/expressjs_icon.png';
 import Postman_icon from '../assets/postman_icon.svg';
 import Mongo_icon from '../assets/Mongo_icon.png';
 import Postgres_icon from '../assets/PostGres_icon.png';
-// import Memories from '../assets/Memories.png';
+import Linkedin_icon from '../assets/Linkedin_icon.png';
+import Twitter_icon from '../assets/X_icon.svg';
+import Git_icon from '../assets/git_icon.jpg'
 import { Memories } from "../components/Memories";
 import { SmartBrains } from "../components/SmartBrains";
 import { RoboFriends } from "../components/RoboFriends";
@@ -110,6 +112,31 @@ function Home({ darkTheme }) {
                             alt="Postgres"
                             style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px' }}
 
+                        />
+                        <br />
+                        <br />
+                        Connect With Me : <br />
+                        <br />
+                        <img 
+                            src={Linkedin_icon}
+                            title="Linkedin"
+                            alt="Linkedin"
+                            onClick={() => (window.open('https://www.linkedin.com/in/divyshekhar-sinha-3208851b2/', '_blank'))}
+                            style={{ height: 'auto', width: '5%', marginRight: '10px', cursor: 'pointer' }}
+                        />
+                        <img 
+                            src={Twitter_icon}
+                            title="Twitter"
+                            alt="Twitter"
+                            onClick={() => (window.open('https://x.com/DivyshekharSin', '_blank'))}
+                            style={{ height: 'auto', width: '5%', borderRadius: '10px', marginRight: '10px', cursor: 'pointer' }}
+                        />
+                         <img 
+                            src={Git_icon}
+                            title="Github"
+                            alt="Github"
+                            onClick={() => (window.open('https://github.com/Divyshekhar', '_blank'))}
+                            style={{ height: 'auto', width: '5%', borderRadius: '10px', marginRight: '10px', cursor: 'pointer' }}
                         />
 
                     </Typography>
