@@ -1,4 +1,4 @@
-import { Box, Typography, Grid } from "@mui/material";
+import { Box, Typography, Grid, Button } from "@mui/material";
 import profile from '../assets/profile.jpg';
 import TS_icon from '../assets/TS_icon.png';
 import React_icon from '../assets/react_icon.png';
@@ -138,6 +138,17 @@ function Home({ darkTheme }) {
                             onClick={() => (window.open('https://github.com/Divyshekhar', '_blank'))}
                             style={{ height: 'auto', width: '5%', borderRadius: '10px', marginRight: '10px', cursor: 'pointer' }}
                         />
+                        <br />
+                        <br />
+
+                        {/* <img 
+                            src={Resume_icon}
+                            title="Resume"
+                            alt="Resume"
+                            onClick={() => (window.open('https://docs.google.com/document/d/199QyyJGVAamPPLna4R3UF4IYlvTMWlyk/edit', '_blank'))}
+                            style={{ height: 'auto', width: '5%', borderRadius: '10px', marginRight: '10px', cursor: 'pointer' }}
+                        /> */}
+                        <Button variant="contained" onClick={()=>(window.open('https://docs.google.com/document/d/199QyyJGVAamPPLna4R3UF4IYlvTMWlyk/edit', '_blank'))} sx={{borderRadius: "25px", background: 'rgb(255,82,82)'}}>Resume</Button>
 
                     </Typography>
                 </Grid>
