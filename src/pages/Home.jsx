@@ -19,6 +19,7 @@ import { RoboFriends } from "../components/RoboFriends";
 
 function Home({ darkTheme }) {
     return (
+        
         <Box
             display={"flex"}
             marginTop={'60px'}
@@ -122,32 +123,24 @@ function Home({ darkTheme }) {
                             title="Linkedin"
                             alt="Linkedin"
                             onClick={() => (window.open('https://www.linkedin.com/in/divyshekhar-sinha-3208851b2/', '_blank'))}
-                            style={{ height: 'auto', width: '5%', marginRight: '10px', cursor: 'pointer' }}
+                            style={{ height: 'auto', width: '5.5%', marginRight: '20px', cursor: 'pointer' }}
                         />
                         <img 
                             src={Twitter_icon}
                             title="Twitter"
                             alt="Twitter"
                             onClick={() => (window.open('https://x.com/DivyshekharSin', '_blank'))}
-                            style={{ height: 'auto', width: '5%', borderRadius: '10px', marginRight: '10px', cursor: 'pointer' }}
+                            style={{ height: 'auto', width: '5.5%', borderRadius: '10px', marginRight: '20px', cursor: 'pointer' }}
                         />
                          <img 
                             src={Git_icon}
                             title="Github"
                             alt="Github"
                             onClick={() => (window.open('https://github.com/Divyshekhar', '_blank'))}
-                            style={{ height: 'auto', width: '5%', borderRadius: '10px', marginRight: '10px', cursor: 'pointer' }}
+                            style={{ height: 'auto', width: '5.5%', borderRadius: '10px', marginRight: '20px', cursor: 'pointer' }}
                         />
                         <br />
                         <br />
-
-                        {/* <img 
-                            src={Resume_icon}
-                            title="Resume"
-                            alt="Resume"
-                            onClick={() => (window.open('https://docs.google.com/document/d/199QyyJGVAamPPLna4R3UF4IYlvTMWlyk/edit', '_blank'))}
-                            style={{ height: 'auto', width: '5%', borderRadius: '10px', marginRight: '10px', cursor: 'pointer' }}
-                        /> */}
                         <Button variant="contained" onClick={()=>(window.open('https://docs.google.com/document/d/199QyyJGVAamPPLna4R3UF4IYlvTMWlyk/edit', '_blank'))} sx={{borderRadius: "25px", background: 'rgb(255,82,82)'}}>Resume</Button>
 
                     </Typography>

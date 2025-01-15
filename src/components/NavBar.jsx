@@ -28,7 +28,7 @@ function NavBar({ darkTheme, setDarkTheme }) {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-
+  
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
