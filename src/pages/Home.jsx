@@ -9,8 +9,8 @@ import Node_icon from '../assets/Node_icon.png';
 import Express_icon from '../assets/expressjs_icon.png';
 import Postman_icon from '../assets/postman_icon.svg';
 import Mongo_icon from '../assets/mongo_icon.png';
-import Postgres_icon from '../assets/PostGres_icon.png';
-import Linkedin_icon from '../assets/Linkedin_icon.png';
+import Postgres_icon from '../assets/postgres_icon.png';
+import Linkedin_icon from '../assets/linkedin_icon.png';
 import Twitter_icon from '../assets/X_icon.svg';
 import Git_icon from '../assets/git_icon.jpg'
 import { Memories } from "../components/Memories";

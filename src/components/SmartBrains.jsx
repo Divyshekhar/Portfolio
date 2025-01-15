@@ -3,7 +3,7 @@ import React_icon from '../assets/react_icon.png';
 import JS_icon from '../assets/JS_icon.png';
 import Node_icon from '../assets/Node_icon.png';
 import Express_icon from '../assets/expressjs_icon.png';
-import Postgres_icon from '../assets/PostGres_icon.png';
+import Postgres_icon from '../assets/postgres_icon.png';
 import { Button, Grid, Typography } from '@mui/material';
 
 

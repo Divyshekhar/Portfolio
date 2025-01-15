@@ -5,7 +5,7 @@ import React_icon from '../assets/react_icon.png';
 import JS_icon from '../assets/JS_icon.png';
 import Node_icon from '../assets/Node_icon.png';
 import Express_icon from '../assets/expressjs_icon.png';
-import Mongo_icon from '../assets/Mongo_icon.png';
+import Mongo_icon from '../assets/mongo_icon.png';
 
 
 export const Memories = ({ darkTheme }) => {
