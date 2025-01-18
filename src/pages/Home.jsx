@@ -1,5 +1,5 @@
 import { Box, Typography, Grid, Button } from "@mui/material";
-import profile from '../assets/profile.jpg';
+import profile from '../assets/profile.webp';
 import TS_icon from '../assets/TS_icon.png';
 import React_icon from '../assets/react_icon.png';
 import JS_icon from '../assets/JS_icon.png';
