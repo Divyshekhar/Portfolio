@@ -1,0 +1,23 @@
+import React from 'react';
+import { Container, Grid, Typography, Box } from '@mui/material';
+
+const Footer = () => {
+  return (
+    <Box sx={{ backgroundColor: '#333', color: '#fff', padding: "20px", width: "100vw", marginTop: "20px", marginLeft: "-8px", marginBottom: "-10px" }}>
+      <Container maxWidth="100%">
+        <Grid container spacing={3}>
+          <Grid item xs={12}>
+            <Typography variant="body1" gutterBottom sx={{ textAlign: "center" }}>
+                Designed and Coded with ❤️ by Divyshekhar Sinha 
+            </Typography>
+            <Typography variant="body1" sx={{ textAlign: "center" }}>
+              &copy; {new Date().getFullYear()} All rights reserved.
+            </Typography>
+          </Grid>
+        </Grid>
+      </Container>
+    </Box>
+  );
+};
+
+export default Footer;
