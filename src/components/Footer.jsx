@@ -3,7 +3,7 @@ import { Container, Grid, Typography, Box } from '@mui/material';
 
 const Footer = () => {
   return (
-    <Box sx={{ backgroundColor: '#333', color: '#fff', paddingBottom: "20px", width: "100vw", marginTop: "20px", marginLeft: "-8px", marginBottom: "-10px" }}>
+    <Box sx={{ backgroundColor: '#333', color: '#fff', paddingBottom: "20px", width: "100vw", marginTop: "80px", marginLeft: "-8px", marginBottom: "-10px" }}>
       <Container maxWidth="100vw">
         <Grid container spacing={3}>
           <Grid item xs={12}>
