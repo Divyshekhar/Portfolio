@@ -10,7 +10,7 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from './components/Footer';
 function App() {
-    const [darkTheme, setDarkTheme] = useState(true);
+    const [darkTheme, setDarkTheme] = useState(false);
     return (
         <Router>
             <ParticlesComponent darkTheme={darkTheme} />
