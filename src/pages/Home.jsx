@@ -13,6 +13,7 @@ import Postgres_icon from '../assets/postgres_icon.png';
 import Linkedin_icon from '../assets/linkedin_icon.png';
 import Twitter_icon from '../assets/X_icon.svg';
 import Git_icon from '../assets/git_icon.jpg'
+import Redux_icon from '../assets/redux_icon.png';
 import { Memories } from "../components/Memories";
 import { SmartBrains } from "../components/SmartBrains";
 import { RoboFriends } from "../components/RoboFriends";
@@ -59,6 +60,13 @@ function Home({ darkTheme }) {
                                 style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '8px' }}
                             />
                         </Tooltip>
+                        <Tooltip title="Redux" enterDelay={10} leaveDelay={30}>
+                            <img
+                                src={Redux_icon}
+                                alt="Redux"
+                                style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '5px' }}
+                            />
+                        </Tooltip>
                         <Tooltip title="Javascript" enterDelay={10} leaveDelay={30}>
                             <img
                                 src={JS_icon}
@@ -66,7 +74,7 @@ function Home({ darkTheme }) {
                                 style={{ height: 'auto', width: '5.3%', borderRadius: '20%', marginRight: '10px' }}
                             />
                         </Tooltip>
-                        
+
                         <Tooltip title="HTML" enterDelay={10} leaveDelay={30}>
                             <img
                                 src={Html_icon}
