@@ -1,4 +1,4 @@
-import { Box, Typography, Grid, Button } from "@mui/material";
+import { Box, Typography, Grid, Button, Tooltip } from "@mui/material";
 import profile from '../assets/profile.jpg';
 import TS_icon from '../assets/TS_icon.png';
 import React_icon from '../assets/react_icon.png';
@@ -19,7 +19,7 @@ import { RoboFriends } from "../components/RoboFriends";
 
 function Home({ darkTheme }) {
     return (
-        
+
         <Box
             display={"flex"}
             marginTop={'60px'}
@@ -45,115 +45,121 @@ function Home({ darkTheme }) {
                         I am a Fullstack Developer.<br />
                         My current Tech Stack include: <br />
                         <br />
-                        <img
-                            src={TS_icon}
-                            title="Typescript"
-                            alt="Typescript"
-                            style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px' }}
-                        />
-                        <img
-                            src={React_icon}
-                            title="React"
-                            alt="React"
-                            style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '8px' }}
-                        />
-                        <img
-                            src={JS_icon}
-                            title="Javascript"
-                            alt="Javascript"
-                            style={{ height: 'auto', width: '5.3%', borderRadius: "20%", marginRight: '10px' }}
-
-                        />
-                        <img
-                            src={Html_icon}
-                            title="HTML"
-                            alt="HTML"
-                            style={{ height: 'auto', width: '3.6%', borderRadius: "20%", marginRight: '10px' }}
-
-                        />
-                        <img
-                            src={Css_icon}
-                            title="CSS"
-                            alt="CSS"
-                            style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px' }}
-
-                        />
-                        <img
-                            src={Node_icon}
-                            title="Node JS"
-                            alt="Node"
-                            style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px' }}
-
-                        />
-                        <img
-                            src={Express_icon}
-                            title="Express JS"
-                            alt="Express"
-                            style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '0px' }}
-
-                        />
+                        <Tooltip title="Typescript" enterDelay={10} leaveDelay={30}>
+                            <img
+                                src={TS_icon}
+                                alt="Typescript"
+                                style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '10px' }}
+                            />
+                        </Tooltip>
+                        <Tooltip title="React" enterDelay={10} leaveDelay={30}>
+                            <img
+                                src={React_icon}
+                                alt="React"
+                                style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '8px' }}
+                            />
+                        </Tooltip>
+                        <Tooltip title="Javascript" enterDelay={10} leaveDelay={30}>
+                            <img
+                                src={JS_icon}
+                                alt="Javascript"
+                                style={{ height: 'auto', width: '5.3%', borderRadius: '20%', marginRight: '10px' }}
+                            />
+                        </Tooltip>
+                        
+                        <Tooltip title="HTML" enterDelay={10} leaveDelay={30}>
+                            <img
+                                src={Html_icon}
+                                alt="HTML"
+                                style={{ height: 'auto', width: '3.6%', borderRadius: '20%', marginRight: '10px' }}
+                            />
+                        </Tooltip>
+                        <Tooltip title="CSS" enterDelay={10} leaveDelay={30}>
+                            <img
+                                src={Css_icon}
+                                alt="CSS"
+                                style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '10px' }}
+                            />
+                        </Tooltip>
+                        <Tooltip title="Node JS" enterDelay={10} leaveDelay={30}>
+                            <img
+                                src={Node_icon}
+                                alt="Node JS"
+                                style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '10px' }}
+                            />
+                        </Tooltip>
+                        <Tooltip title="Express JS" enterDelay={10} leaveDelay={30}>
+                            <img
+                                src={Express_icon}
+                                alt="Express JS"
+                                style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '0px' }}
+                            />
+                        </Tooltip>
                         {/* NEED TO CHANGE THE POSTMAN ICON */}
-                        <img
-                            src={Postman_icon}
-                            title="Postman"
-                            alt="Postman"
-                            style={{ height: 'auto', width: '6%', borderRadius: "40%", marginRight: '10px' }}
-
-                        />
-                        <img
-                            src={Mongo_icon}
-                            title="MongoDB"
-                            alt="MongoDB"
-                            style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px' }}
-
-                        />
-                        <img
-                            src={Postgres_icon}
-                            title="Postgres"
-                            alt="Postgres"
-                            style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px' }}
-
-                        />
+                        <Tooltip title="Postman" enterDelay={10} leaveDelay={30}>
+                            <img
+                                src={Postman_icon}
+                                alt="Postman"
+                                style={{ height: 'auto', width: '6%', borderRadius: '40%', marginRight: '10px' }}
+                            />
+                        </Tooltip>
+                        <Tooltip title="MongoDB" enterDelay={10} leaveDelay={30}>
+                            <img
+                                src={Mongo_icon}
+                                alt="MongoDB"
+                                style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '10px' }}
+                            />
+                        </Tooltip>
+                        <Tooltip title="Postgres" enterDelay={10} leaveDelay={30}>
+                            <img
+                                src={Postgres_icon}
+                                alt="Postgres"
+                                style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '10px' }}
+                            />
+                        </Tooltip>
                         <br />
                         <br />
                         Connect With Me : <br />
                         <br />
-                        <img 
-                            src={Linkedin_icon}
-                            title="Linkedin"
-                            alt="Linkedin"
-                            onClick={() => (window.open('https://www.linkedin.com/in/divyshekhar-sinha-3208851b2/', '_blank'))}
-                            style={{ height: 'auto', width: '5.5%', marginRight: '20px', cursor: 'pointer' }}
-                        />
-                        <img 
-                            src={Twitter_icon}
-                            title="Twitter"
-                            alt="Twitter"
-                            onClick={() => (window.open('https://x.com/DivyshekharSin', '_blank'))}
-                            style={{ height: 'auto', width: '5.5%', borderRadius: '10px', marginRight: '20px', cursor: 'pointer' }}
-                        />
-                         <img 
-                            src={Git_icon}
-                            title="Github"
-                            alt="Github"
-                            onClick={() => (window.open('https://github.com/Divyshekhar', '_blank'))}
-                            style={{ height: 'auto', width: '5.5%', borderRadius: '10px', marginRight: '20px', cursor: 'pointer' }}
-                        />
+                        <Tooltip title="Linkedin" enterDelay={10} leaveDelay={30}>
+                            <img
+                                src={Linkedin_icon}
+                                alt="Linkedin"
+                                onClick={() => (window.open('https://www.linkedin.com/in/divyshekhar-sinha-3208851b2/', '_blank'))}
+                                style={{ height: 'auto', width: '5.5%', marginRight: '20px', cursor: 'pointer' }}
+                            />
+                        </Tooltip>
+                        <Tooltip title="Twitter" enterDelay={10} leaveDelay={30}>
+                            <img
+                                src={Twitter_icon}
+                                alt="Twitter"
+                                onClick={() => (window.open('https://x.com/DivyshekharSin', '_blank'))}
+                                style={{ height: 'auto', width: '5.5%', borderRadius: '10px', marginRight: '20px', cursor: 'pointer' }}
+                            />
+                        </Tooltip>
+                        <Tooltip title="Github" enterDelay={10} leaveDelay={30}>
+                            <img
+                                src={Git_icon}
+                                alt="Github"
+                                onClick={() => (window.open('https://github.com/Divyshekhar', '_blank'))}
+                                style={{ height: 'auto', width: '5.5%', borderRadius: '10px', marginRight: '20px', cursor: 'pointer' }}
+                            />
+                        </Tooltip>
                         <br />
                         <br />
-                        <Button variant="contained" onClick={()=>(window.open('https://docs.google.com/document/d/199QyyJGVAamPPLna4R3UF4IYlvTMWlyk/edit', '_blank'))} sx={{borderRadius: "25px", background: 'rgb(255,82,82)'}}>Resume</Button>
+                        <Button variant="contained" onClick={() => (window.open('https://docs.google.com/document/d/199QyyJGVAamPPLna4R3UF4IYlvTMWlyk/edit', '_blank'))} sx={{ borderRadius: "25px", background: 'rgb(255,82,82)' }}>Resume</Button>
 
                     </Typography>
                 </Grid>
-                
+
                 <Grid item xs={12} sm={12} sx={{ marginTop: "50px" }}>
                     <Typography sx={{ fontSize: '30px', fontWeight: 'bold', display: 'flex', justifyContent: 'center' }}>
                         Projects
                     </Typography>
                 </Grid>
-                <Memories darkTheme = {darkTheme} />
-                <SmartBrains darkTheme = {darkTheme} />
-                <RoboFriends darkTheme = {darkTheme} />
+                <Memories darkTheme={darkTheme} />
+                <SmartBrains darkTheme={darkTheme} />
+                <RoboFriends darkTheme={darkTheme} />
             </Grid>
         </Box>
     )
