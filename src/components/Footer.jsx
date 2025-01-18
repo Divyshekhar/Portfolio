@@ -8,7 +8,7 @@ const Footer = () => {
         <Grid container spacing={3}>
           <Grid item xs={12}>
             <Typography variant="body1" gutterBottom sx={{ textAlign: "center" }}>
-                Designed and Coded with ❤️ by Divyshekhar Sinha 
+                Designed and Coded with ❤️<br /> &ensp; &nbsp; ― by Divyshekhar Sinha 
             </Typography>
             <Typography variant="body1" sx={{ textAlign: "center" }}>
               &copy; {new Date().getFullYear()} All rights reserved.
