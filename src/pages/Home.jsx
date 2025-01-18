@@ -39,7 +39,7 @@ function Home({ darkTheme }) {
                     />
 
                 </Grid>
-                <Grid item xs={12} sm={6} sx={{ display: "flex", justifyContent: 'center' }}>
+                <Grid item xs={12} sm={6} sx={{ display: "flex", justifyContent: 'center', marginBottom: '155`px' }}>
                     <Typography sx={{ fontSize: '20px', marginLeft: "20px" }}>
                         Hi! I'm Divyshekhar Sinha, <br /> A third year Computer Science student at KIIT University, India.<br />
                         I am a Fullstack Developer.<br />
@@ -145,6 +145,7 @@ function Home({ darkTheme }) {
 
                     </Typography>
                 </Grid>
+                
                 <Grid item xs={12} sm={12} sx={{ marginTop: "50px" }}>
                     <Typography sx={{ fontSize: '30px', fontWeight: 'bold', display: 'flex', justifyContent: 'center' }}>
                         Projects
