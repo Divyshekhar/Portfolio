@@ -18,7 +18,7 @@ function App() {
                 <Route path='/' element={<Home darkTheme={darkTheme} />} />
                 <Route path="/contact" element={<Contact darkTheme={darkTheme} />} />
                 <Route path="/about" element={<About darkTheme={darkTheme} />} />
-                <Route path="*" element={<NotFound darkTheme={darkTheme} />} />
+                <Route path="/*" element={<NotFound darkTheme={darkTheme} />} />
             </Routes>
             <Footer />
         </Router>
