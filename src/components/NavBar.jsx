@@ -1,39 +1,14 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
-import { Link } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
 import DarkModeTwoToneIcon from '@mui/icons-material/DarkModeTwoTone';
 
-
-const pages = [
-  { name: "About", path: '/about' },
-  { name: "Projects", path: '/projects' },
-  { name: "Contact", path: '/contact' }
-];
-
-
 function NavBar({ darkTheme, setDarkTheme }) {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
   return (
     <AppBar position="relative" sx={{ backgroundColor: darkTheme ? 'rgba(156,39,176,0.2)' : 'rgba(25,118,210,0.2)', top: "-10px", width: "100vw", left: '-10px' }}>
       <Container maxWidth="xl">
