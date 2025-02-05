@@ -156,7 +156,7 @@ function Home({ darkTheme }) {
                         <br />
                         <br />
                         <Tooltip title="Open Resume" enterDelay={10} leaveDelay={30}>
-                            <Button variant="contained" onClick={() => (window.open('https://docs.google.com/document/d/199QyyJGVAamPPLna4R3UF4IYlvTMWlyk/edit', '_blank'))} sx={{ borderRadius: "25px", background: 'rgb(255,82,82)' }}>Resume</Button>
+                            <Button variant="contained" onClick={() => (window.open('https://docs.google.com/document/d/14HQDggC0WgFIg9nsLkOKMU2IUHSv1PYhvxQpnoZf_bQ/edit?usp=sharing', '_blank'))} sx={{ borderRadius: "25px", background: 'rgb(255,82,82)' }}>Resume</Button>
                         </Tooltip>
                     </Typography>
                 </Grid>
