@@ -14,7 +14,7 @@ function App() {
             <NavBar darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
             <Routes>
                 <Route path='/' element={<Home darkTheme={darkTheme} />} />
-                <Route path='/404' element={<NotFound darkTheme={darkTheme} />} />
+                <Route path='*' element={<NotFound darkTheme={darkTheme} />} />
             </Routes>
             <Footer />
         </Router>
