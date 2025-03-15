@@ -2,21 +2,24 @@ import { Box, Typography, Grid, Button, Tooltip } from "@mui/material";
 import profile from '../assets/profile.jpg';
 import TS_icon from '../assets/TS_icon.png';
 import React_icon from '../assets/react_icon.png';
+import Prisma_icon from '../assets/prisma.svg';
 import JS_icon from '../assets/JS_icon.png';
 import Html_icon from '../assets/Html_icon.png';
 import Css_icon from '../assets/css_icon.png';
 import Node_icon from '../assets/Node_icon.png';
 import Express_icon from '../assets/expressjs_icon.png';
-import Postman_icon from '../assets/postman_icon.svg';
+import Postman_icon from '../assets/postman.png';
 import Mongo_icon from '../assets/mongo_icon.png';
 import Postgres_icon from '../assets/postgres_icon.png';
 import Linkedin_icon from '../assets/linkedin_icon.png';
 import Twitter_icon from '../assets/X_icon.svg';
+import Next_icon from '../assets/nextjs.svg';
 import Git_icon from '../assets/git_icon.jpg'
 import Redux_icon from '../assets/redux_icon.png';
 import { Memories } from "../components/Memories";
 import { SmartBrains } from "../components/SmartBrains";
 import { RoboFriends } from "../components/RoboFriends";
+import { FinSnap } from "../components/FinSnap";
 
 function Home({ darkTheme }) {
     return (
@@ -53,7 +56,14 @@ function Home({ darkTheme }) {
                                 style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '10px' }}
                             />
                         </Tooltip>
-                        <Tooltip title="React" enterDelay={10} leaveDelay={30}>
+                        <Tooltip title="Next.js" enterDelay={10} leaveDelay={30}>
+                            <img
+                                src={Next_icon}
+                                alt="Next"
+                                style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '8px', background: "white" }}
+                            />
+                        </Tooltip>
+                        <Tooltip title="React.js" enterDelay={10} leaveDelay={30}>
                             <img
                                 src={React_icon}
                                 alt="React"
@@ -64,7 +74,7 @@ function Home({ darkTheme }) {
                             <img
                                 src={Redux_icon}
                                 alt="Redux"
-                                style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '5px' }}
+                                style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '5px', background: "white" }}
                             />
                         </Tooltip>
                         <Tooltip title="Javascript" enterDelay={10} leaveDelay={30}>
@@ -89,18 +99,18 @@ function Home({ darkTheme }) {
                                 style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '10px' }}
                             />
                         </Tooltip>
-                        <Tooltip title="Node JS" enterDelay={10} leaveDelay={30}>
+                        <Tooltip title="Node.js" enterDelay={10} leaveDelay={30}>
                             <img
                                 src={Node_icon}
                                 alt="Node JS"
                                 style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '10px' }}
                             />
                         </Tooltip>
-                        <Tooltip title="Express JS" enterDelay={10} leaveDelay={30}>
+                        <Tooltip title="Express.js" enterDelay={10} leaveDelay={30}>
                             <img
                                 src={Express_icon}
                                 alt="Express JS"
-                                style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '0px' }}
+                                style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '10px' }}
                             />
                         </Tooltip>
                         {/* NEED TO CHANGE THE POSTMAN ICON */}
@@ -108,7 +118,14 @@ function Home({ darkTheme }) {
                             <img
                                 src={Postman_icon}
                                 alt="Postman"
-                                style={{ height: 'auto', width: '6%', borderRadius: '40%', marginRight: '10px' }}
+                                style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '10px' }}
+                            />
+                        </Tooltip>
+                        <Tooltip title="Prisma" enterDelay={10} leaveDelay={30}>
+                            <img
+                                src={Prisma_icon}
+                                alt="Prisma"
+                                style={{ height: 'auto', width: '4.6%', borderRadius: '20%', marginRight: '10px', background: "white" }}
                             />
                         </Tooltip>
                         <Tooltip title="MongoDB" enterDelay={10} leaveDelay={30}>
@@ -125,6 +142,7 @@ function Home({ darkTheme }) {
                                 style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '10px' }}
                             />
                         </Tooltip>
+                       
                         <br />
                         <br />
                         Connect With Me : <br />
@@ -166,6 +184,7 @@ function Home({ darkTheme }) {
                         Projects
                     </Typography>
                 </Grid>
+                <FinSnap darkTheme={darkTheme} />
                 <Memories darkTheme={darkTheme} />
                 <SmartBrains darkTheme={darkTheme} />
                 <RoboFriends darkTheme={darkTheme} />
