@@ -1,7 +1,6 @@
 import { Button, Grid, Typography } from '@mui/material';
 import FinSnap_img from '../assets/FinSnap.png';
 import Prisma_icon from '../assets/prisma.svg';
-import React_icon from '../assets/react_icon.png';
 import TS_icon from '../assets/TS_icon.png';
 import Node_icon from '../assets/Node_icon.png';
 import Express_icon from '../assets/expressjs_icon.png';
@@ -40,12 +39,6 @@ export const FinSnap = ({ darkTheme }) => {
                     title="React"
                     alt="React"
                     style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '8px', background: "white" }}
-                />
-                <img
-                    src={React_icon}
-                    title="React"
-                    alt="React"
-                    style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '8px' }}
                 />
                 <img
                     src={Node_icon}
