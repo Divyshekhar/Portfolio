@@ -9,6 +9,23 @@ import Tooltip from '@mui/material/Tooltip';
 import DarkModeTwoToneIcon from '@mui/icons-material/DarkModeTwoTone';
 
 function NavBar({ darkTheme, setDarkTheme }) {
+  React.useEffect(() => {
+    const storedTheme = localStorage.getItem('dark');
+    if(storedTheme === true){
+      setDarkTheme(true);
+    }
+    else{
+      setDarkTheme(false);
+
+    }
+  }, [])
+  const handleThemeToggle = () => {
+    setDarkTheme(prev => {
+      const newTheme = !prev;
+      localStorage.setItem("dark", newTheme);
+      return newTheme;
+    })
+  }
   return (
     <AppBar position="relative" sx={{ backgroundColor: darkTheme ? 'rgba(156,39,176,0.2)' : 'rgba(25,118,210,0.2)', top: "-10px", width: "100vw", left: '-10px' }}>
       <Container maxWidth="xl">
@@ -54,9 +71,7 @@ function NavBar({ darkTheme, setDarkTheme }) {
           
           <Box sx={{ flexGrow: 1,  display:'flex', justifyContent: 'end'}}>
             <Tooltip title={darkTheme ? "Light Mode" : "Dark Mode"}>
-              <IconButton onClick={() => {
-                setDarkTheme(prevState => !prevState)
-              }} sx={{ p: 0 }}>
+              <IconButton onClick={handleThemeToggle} sx={{ p: 0 }}>
                 <DarkModeTwoToneIcon sx={{ color: darkTheme ? 'rgb(177, 215, 233)' : 'rgb(37,38,69)', }} />
               </IconButton>
             </Tooltip>
