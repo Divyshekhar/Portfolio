@@ -13,7 +13,7 @@ export const Memories = ({ darkTheme }) => {
         <>
             <Grid item xs={12} sm={6} sx={{ marginTop: '50px' }}>
                 <Typography sx={{ fontSize: '25px', fontWeight: 'bold', display: 'flex', justifyContent: 'left', color: darkTheme ? 'rgb(233, 177, 196)' : 'rgb(222,109,46)' }}>
-                    Memories<br /> <br />
+                    Memories: A Social Media App<br /> <br />
                 </Typography>
                 <Typography sx={{ fontSize: '19px', display: 'flex', justifyContent: 'center' }}>
                     Memories is a fullstack web application that allows users to upload photos and descriptions to create a record of their moments. Users can like posts, edit them, or delete them as needed. The app provides a simple interface for managing and viewing posts, making it easy to keep track of personal memories and interactions.

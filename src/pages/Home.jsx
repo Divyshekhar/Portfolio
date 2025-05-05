@@ -16,10 +16,12 @@ import Twitter_icon from '../assets/X_icon.svg';
 import Next_icon from '../assets/nextjs.svg';
 import Git_icon from '../assets/git_icon.jpg'
 import Redux_icon from '../assets/redux_icon.png';
+import Tailwind_icon from '../assets/tailwind.png';
 import { Memories } from "../components/Memories";
 import { SmartBrains } from "../components/SmartBrains";
 import { RoboFriends } from "../components/RoboFriends";
 import { FinSnap } from "../components/FinSnap";
+import { Sommaire } from "../components/Sommaire";
 
 function Home({ darkTheme }) {
     return (
@@ -60,6 +62,13 @@ function Home({ darkTheme }) {
                             <img
                                 src={Next_icon}
                                 alt="Next"
+                                style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '8px', background: "white" }}
+                            />
+                        </Tooltip>
+                        <Tooltip title="Tailwind CSS" enterDelay={10} leaveDelay={30}>
+                            <img
+                                src={Tailwind_icon}
+                                alt="Tailwind CSS"
                                 style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '8px', background: "white" }}
                             />
                         </Tooltip>
@@ -184,10 +193,12 @@ function Home({ darkTheme }) {
                         Projects
                     </Typography>
                 </Grid>
+                <Sommaire darkTheme={darkTheme} />
                 <FinSnap darkTheme={darkTheme} />
                 <Memories darkTheme={darkTheme} />
                 <SmartBrains darkTheme={darkTheme} />
                 <RoboFriends darkTheme={darkTheme} />
+
             </Grid>
         </Box>
     )
