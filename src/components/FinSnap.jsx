@@ -13,7 +13,7 @@ export const FinSnap = ({ darkTheme }) => {
         <>
             <Grid item xs={12} sm={6} sx={{ marginTop: '50px' }}>
                 <Typography sx={{ fontSize: '25px', fontWeight: 'bold', display: 'flex', justifyContent: 'left', color: darkTheme ? 'rgb(233, 177, 196)' : 'rgb(222,109,46)' }}>
-                    FinSnap<br /> <br />
+                    FinSnap: A Finance Tracker<br /> <br />
                 </Typography>
                 <Typography sx={{ fontSize: '19px', display: 'flex', justifyContent: 'center' }}>
                     FinSnap is a finance-related web application designed for efficiently tracking and managing financial data. It leverages modern web technologies user interactions. The application includes a comprehensive user management system with authentication, authorization, and session management using tokens. providing a focus on performance, security, and user-friendly design.
@@ -36,8 +36,8 @@ export const FinSnap = ({ darkTheme }) => {
                 />
                 <img
                     src={Next_icon}
-                    title="React"
-                    alt="React"
+                    title="Next.js"
+                    alt="Next.js"
                     style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '8px', background: "white" }}
                 />
                 <img
@@ -49,14 +49,14 @@ export const FinSnap = ({ darkTheme }) => {
                 />
                 <img
                     src={TS_icon}
-                    title="Javascript"
-                    alt="Javascript"
+                    title="Typescript"
+                    alt="Typescript"
                     style={{ height: 'auto', width: '5.3%', borderRadius: "20%", marginRight: '7px' }}
                 />
                 <img
                     src={Prisma_icon}
-                    title="Javascript"
-                    alt="Javascript"
+                    title="Prisma"
+                    alt="Prisma"
                     style={{ height: 'auto', width: '5.3%', borderRadius: "20%", marginRight: '7px', background: "white" }}
 
                 />
