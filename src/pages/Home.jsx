@@ -22,6 +22,7 @@ import { SmartBrains } from "../components/SmartBrains";
 import { RoboFriends } from "../components/RoboFriends";
 import { FinSnap } from "../components/FinSnap";
 import { Sommaire } from "../components/Sommaire";
+import {ContactForm} from "../components/ContactForm";
 
 function Home({ darkTheme }) {
     return (
@@ -198,9 +199,12 @@ function Home({ darkTheme }) {
                 <Memories darkTheme={darkTheme} />
                 <SmartBrains darkTheme={darkTheme} />
                 <RoboFriends darkTheme={darkTheme} />
-
+                <ContactForm darkTheme={darkTheme} />
             </Grid>
         </Box>
     )
 }
+
+
 export default Home;
+
