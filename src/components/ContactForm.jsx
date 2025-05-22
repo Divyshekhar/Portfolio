@@ -14,6 +14,8 @@ export const ContactForm = ({ darkTheme }) => {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false)
+
   const handleChange = (e) => {
     setFormData((prev) => ({
       ...prev,
@@ -23,6 +25,7 @@ export const ContactForm = ({ darkTheme }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true)
     try {
       const res = await fetch("https://portfolio-backend-1pii.onrender.com/contact", {
         method: "POST",
@@ -37,6 +40,9 @@ export const ContactForm = ({ darkTheme }) => {
       } 
     } catch (error) {
       alert("Error: " + error.message);
+    }
+    finally{
+        setLoading(false)
     }
   };
 
@@ -145,8 +151,9 @@ export const ContactForm = ({ darkTheme }) => {
             backgroundColor: darkTheme ? "#d08fa5" : "#bf5b1f",
           },
         }}
+        disabled={loading}
       >
-        Submit
+        {loading ? "Submitting": "Submit"}
       </Button>
     </Box>
   );
