@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from "@mui/material";
+import { Button, Grid, Toolbar, Tooltip, Typography } from "@mui/material";
 import HTML_icon from '../assets/Html_icon.png';
 import RoboFriends_img from '../assets/RoboFriends.jpeg';
 import CSS_icon from '../assets/css_icon.png';
@@ -16,13 +16,15 @@ export const RoboFriends = ({ darkTheme }) => {
                     <br />
                 </Typography>
                 <Typography sx={{ color: darkTheme ? 'rgb(254,246,179)' : 'rgb(21,94,149)', fontWeight: 'bold' }}>Tech stack used: </Typography><br />
-                
+                <Tooltip title="React.js">
                 <img
                     src={React_icon}
                     title="React"
                     alt="React"
                     style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '8px' }}
                 />
+                </Tooltip>
+                <Tooltip title="Javascript">
                 <img
                     src={JS_icon}
                     title="Javascript"
@@ -30,6 +32,8 @@ export const RoboFriends = ({ darkTheme }) => {
                     style={{ height: 'auto', width: '5.3%', borderRadius: "20%", marginRight: '10px' }}
 
                 />
+                </Tooltip>
+                <Tooltip title="HTML">
                 <img
                     src={HTML_icon}
                     title="HTML"
@@ -37,6 +41,8 @@ export const RoboFriends = ({ darkTheme }) => {
                     style={{ height: 'auto', width: '4.5%', borderRadius: "20%", marginRight: '10px' }}
 
                 />
+                </Tooltip>
+                <Tooltip title="CSS">
                 <img
                     src={CSS_icon}
                     title="CSS"
@@ -44,6 +50,7 @@ export const RoboFriends = ({ darkTheme }) => {
                     style={{ height: 'auto', width: '5.3%', borderRadius: "20%", marginRight: '10px' }}
 
                 />
+                </Tooltip>
                 <br />
                 <br />
                 <Button variant="contained" sx={{ borderRadius: '25px', background: 'rgb(183,113,228)', color: 'rgb(177, 215, 233)', marginRight: '20px' }} onClick={() => window.open('https://divyshekhar.github.io/Robofriends/', '_blank')} >See Live</Button>

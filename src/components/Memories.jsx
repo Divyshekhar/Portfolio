@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from '@mui/material';
+import { Button, Grid, Tooltip, Typography } from '@mui/material';
 import Memories_img from '../assets/Memories.png';
 import Redux_icon from '../assets/redux_icon.png';
 import React_icon from '../assets/react_icon.png';
@@ -20,13 +20,7 @@ export const Memories = ({ darkTheme }) => {
                     <br />
                 </Typography>
                 <Typography sx={{ color: darkTheme ? 'rgb(254,246,179)' : 'rgb(21,94,149)', fontWeight: 'bold' }}>Tech stack used: </Typography><br />
-                <img
-                    src={Mongo_icon}
-                    title="MongoDB"
-                    alt="MongoDB"
-                    style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px' }}
-
-                />
+                <Tooltip title="Express.js">
                 <img
                     src={Express_icon}
                     title="Express JS"
@@ -34,12 +28,16 @@ export const Memories = ({ darkTheme }) => {
                     style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px' }}
 
                 />
+                </Tooltip>
+                <Tooltip title="React.js">
                 <img
                     src={React_icon}
                     title="React"
                     alt="React"
                     style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '8px' }}
                 />
+                </Tooltip>
+                <Tooltip title="Node.js">
                 <img
                     src={Node_icon}
                     title="Node JS"
@@ -47,6 +45,8 @@ export const Memories = ({ darkTheme }) => {
                     style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px' }}
 
                 />
+                </Tooltip>
+                <Tooltip title="Javascript">
                 <img
                     src={JS_icon}
                     title="Javascript"
@@ -54,6 +54,8 @@ export const Memories = ({ darkTheme }) => {
                     style={{ height: 'auto', width: '5.3%', borderRadius: "20%", marginRight: '7px' }}
 
                 />
+                </Tooltip>
+                <Tooltip title="Redux">
                 <img
                     src={Redux_icon}
                     title="Redux"
@@ -61,6 +63,17 @@ export const Memories = ({ darkTheme }) => {
                     style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px', background: "white" }}
 
                 />
+                </Tooltip>
+                <Tooltip title="MongoDB">
+                <img
+                    src={Mongo_icon}
+                    title="MongoDB"
+                    alt="MongoDB"
+                    style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px' }}
+                    
+                 />
+                </Tooltip>
+
                 <br />
                 <br />
                 <Button variant="contained" sx={{ borderRadius: '25px', background: 'rgb(183,113,228)', color: 'rgb(177, 215, 233)', marginRight: '20px' }} onClick={() => window.open('https://memories-frontend-yv72.onrender.com/', '_blank')} >See Live</Button>

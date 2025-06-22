@@ -4,7 +4,7 @@ import JS_icon from '../assets/JS_icon.png';
 import Node_icon from '../assets/Node_icon.png';
 import Express_icon from '../assets/expressjs_icon.png';
 import Postgres_icon from '../assets/postgres_icon.png';
-import { Button, Grid, Typography } from '@mui/material';
+import { Button, Grid, Tooltip, Typography } from '@mui/material';
 
 
 export const SmartBrains = ({ darkTheme }) => {
@@ -19,13 +19,7 @@ export const SmartBrains = ({ darkTheme }) => {
                     <br />
                 </Typography>
                 <Typography sx={{ color: darkTheme ? 'rgb(254,246,179)' : 'rgb(21,94,149)', fontWeight: 'bold' }}>Tech stack used: </Typography><br />
-                <img
-                    src={Postgres_icon}
-                    title="Postgres"
-                    alt="Postgres"
-                    style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px' }}
-
-                />
+                <Tooltip title="Express.js">
                 <img
                     src={Express_icon}
                     title="Express JS"
@@ -33,12 +27,16 @@ export const SmartBrains = ({ darkTheme }) => {
                     style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px' }}
 
                 />
+                </Tooltip>
+                <Tooltip title="React.js">
                 <img
                     src={React_icon}
                     title="React"
                     alt="React"
                     style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '8px' }}
                 />
+                </Tooltip>
+                <Tooltip title="Node.js">
                 <img
                     src={Node_icon}
                     title="Node JS"
@@ -46,6 +44,8 @@ export const SmartBrains = ({ darkTheme }) => {
                     style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '7px' }}
 
                 />
+                </Tooltip>
+                <Tooltip title="Javascript">
                 <img
                     src={JS_icon}
                     title="Javascript"
@@ -53,6 +53,16 @@ export const SmartBrains = ({ darkTheme }) => {
                     style={{ height: 'auto', width: '5.3%', borderRadius: "20%", marginRight: '10px' }}
 
                 />
+                </Tooltip>
+                <Tooltip title="Postgres">
+                <img
+                    src={Postgres_icon}
+                    title="Postgres"
+                    alt="Postgres"
+                    style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px' }}
+
+                />
+                </Tooltip>
                 <br />
                 <br />
                 <Button variant="contained" sx={{ borderRadius: '25px', background: 'rgb(183,113,228)', color: 'rgb(177, 215, 233)', marginRight: '20px' }} onClick={() => window.open('https://myapp-ftwv.onrender.com/', '_blank')} >See Live</Button>

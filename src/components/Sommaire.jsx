@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from '@mui/material';
+import { Button, Grid, Tooltip, Typography } from '@mui/material';
 import Sommaire_img from '../assets/Sommaire.png';
 import Postgres_icon from '../assets/postgres_icon.png';
 import TS_icon from '../assets/TS_icon.png';
@@ -18,25 +18,31 @@ export const Sommaire = ({ darkTheme }) => {
                     <br />
                 </Typography>
                 <Typography sx={{ color: darkTheme ? 'rgb(254,246,179)' : 'rgb(21,94,149)', fontWeight: 'bold' }}>Tech stack used: </Typography><br />
-               
+               <Tooltip title="Next.js">
                 <img
                     src={Next_icon}
                     title="Next.js"
                     alt="Next.js"
                     style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '8px', background: "white" }}
                 />
+                </Tooltip>
+                <Tooltip title="Tailwind CSS">
                 <img
                     src={Tailwind_icon}
                     title="Tailwind CSS"
                     alt="Tailwind CSS"
                     style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px', background: "white" }}
                 />
+                </Tooltip>
+                <Tooltip title="Typescript">
                 <img
                     src={TS_icon}
                     title="Typescript"
                     alt="Typescript"
                     style={{ height: 'auto', width: '5.3%', borderRadius: "20%", marginRight: '10px' }}
                 />
+                </Tooltip>
+                <Tooltip title="Postgres">
                <img
                     src={Postgres_icon}
                     title="Postgres"
@@ -44,7 +50,7 @@ export const Sommaire = ({ darkTheme }) => {
                     style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px' }}
 
                 />
-
+                </Tooltip>
                 <br />
                 <br />
                 <Button variant="contained" sx={{ borderRadius: '25px', background: 'rgb(183,113,228)', color: 'rgb(177, 215, 233)', marginRight: '20px' }} onClick={() => window.open('https://sommaireai.vercel.app/', '_blank')} >See Live</Button>

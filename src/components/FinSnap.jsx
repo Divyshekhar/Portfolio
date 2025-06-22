@@ -20,15 +20,6 @@ export const FinSnap = ({ darkTheme }) => {
                     <br />
                 </Typography>
                 <Typography sx={{ color: darkTheme ? 'rgb(254,246,179)' : 'rgb(21,94,149)', fontWeight: 'bold' }}>Tech stack used: </Typography><br />
-                <Tooltip title="Postgres">
-                <img
-                    src={Postgres_icon}
-                    title="Postgres"
-                    alt="Postgres"
-                    style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px' }}
-
-                />
-                </Tooltip>
                 <Tooltip title="Golang">
                 <img
                     src={Go_icon}
@@ -64,6 +55,15 @@ export const FinSnap = ({ darkTheme }) => {
                     alt="Typescript"
                     style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '7px' }}
                     />
+                </Tooltip>
+                <Tooltip title="Postgres">
+                <img
+                    src={Postgres_icon}
+                    title="Postgres"
+                    alt="Postgres"
+                    style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px' }}
+
+                />
                 </Tooltip>
                 <Tooltip title="Prisma">
                 <img
