@@ -1,9 +1,9 @@
-import { Button, Grid, Typography } from '@mui/material';
+import { Button, Grid, Tooltip, Typography } from '@mui/material';
 import FinSnap_img from '../assets/FinSnap.png';
 import Prisma_icon from '../assets/prisma.svg';
 import TS_icon from '../assets/TS_icon.png';
+import Go_icon from '../assets/golang.png';
 import Node_icon from '../assets/Node_icon.png';
-import Express_icon from '../assets/expressjs_icon.png';
 import Postgres_icon from '../assets/postgres_icon.png';
 import Next_icon from '../assets/nextjs.svg';
 
@@ -20,6 +20,7 @@ export const FinSnap = ({ darkTheme }) => {
                     <br />
                 </Typography>
                 <Typography sx={{ color: darkTheme ? 'rgb(254,246,179)' : 'rgb(21,94,149)', fontWeight: 'bold' }}>Tech stack used: </Typography><br />
+                <Tooltip title="Postgres">
                 <img
                     src={Postgres_icon}
                     title="Postgres"
@@ -27,39 +28,52 @@ export const FinSnap = ({ darkTheme }) => {
                     style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px' }}
 
                 />
+                </Tooltip>
+                <Tooltip title="Golang">
                 <img
-                    src={Express_icon}
-                    title="Express JS"
-                    alt="Express"
-                    style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px' }}
+                    src={Go_icon}
+                    title="Golang"
+                    alt="Golang"
+                    style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px', background: 'white' }}
 
                 />
+                </Tooltip>
+                <Tooltip title="Next.js">
                 <img
                     src={Next_icon}
                     title="Next.js"
                     alt="Next.js"
                     style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '8px', background: "white" }}
                 />
+                </Tooltip>
+
+                <Tooltip title="Node.js">
+
                 <img
                     src={Node_icon}
                     title="Node JS"
                     alt="Node"
                     style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px' }}
-
-                />
+                    
+                    />
+                </Tooltip>
+                <Tooltip title="Typescript">
                 <img
                     src={TS_icon}
                     title="Typescript"
                     alt="Typescript"
-                    style={{ height: 'auto', width: '5.3%', borderRadius: "20%", marginRight: '7px' }}
-                />
+                    style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '7px' }}
+                    />
+                </Tooltip>
+                <Tooltip title="Prisma">
                 <img
                     src={Prisma_icon}
                     title="Prisma"
                     alt="Prisma"
-                    style={{ height: 'auto', width: '5.3%', borderRadius: "20%", marginRight: '7px', background: "white" }}
-
-                />
+                    style={{ height: 'auto', width: '4.8%', borderRadius: "20%", marginLeft: '2px', background: "white" }}
+                    
+                    />
+                    </Tooltip>
 
                 <br />
                 <br />

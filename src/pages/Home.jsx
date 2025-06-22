@@ -2,6 +2,7 @@ import { Box, Typography, Grid, Button, Tooltip } from "@mui/material";
 import profile from '../assets/profile.jpg';
 import TS_icon from '../assets/TS_icon.png';
 import React_icon from '../assets/react_icon.png';
+import Go_icon from '../assets/golang.png';
 import Prisma_icon from '../assets/prisma.svg';
 import JS_icon from '../assets/JS_icon.png';
 import Html_icon from '../assets/Html_icon.png';
@@ -52,6 +53,13 @@ function Home({ darkTheme }) {
                         I am a Fullstack Developer.<br />
                         My current Tech Stack include: <br />
                         <br />
+                         <Tooltip title="Golang" enterDelay={10} leaveDelay={30}>
+                            <img
+                                src={Go_icon}
+                                alt="Golang"
+                                style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '10px', background: "white"}}
+                            />
+                        </Tooltip>
                         <Tooltip title="Typescript" enterDelay={10} leaveDelay={30}>
                             <img
                                 src={TS_icon}
