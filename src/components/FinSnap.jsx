@@ -3,7 +3,6 @@ import FinSnap_img from '../assets/FinSnap.png';
 import Prisma_icon from '../assets/prisma.svg';
 import TS_icon from '../assets/TS_icon.png';
 import Go_icon from '../assets/golang.png';
-import Node_icon from '../assets/Node_icon.png';
 import Postgres_icon from '../assets/postgres_icon.png';
 import Next_icon from '../assets/nextjs.svg';
 
@@ -38,16 +37,6 @@ export const FinSnap = ({ darkTheme }) => {
                 />
                 </Tooltip>
 
-                <Tooltip title="Node.js">
-
-                <img
-                    src={Node_icon}
-                    title="Node JS"
-                    alt="Node"
-                    style={{ height: 'auto', width: '5%', borderRadius: "20%", marginRight: '10px' }}
-                    
-                    />
-                </Tooltip>
                 <Tooltip title="Typescript">
                 <img
                     src={TS_icon}
