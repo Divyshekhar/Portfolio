@@ -24,6 +24,7 @@ import { RoboFriends } from "../components/RoboFriends";
 import { FinSnap } from "../components/FinSnap";
 import { Sommaire } from "../components/Sommaire";
 import {ContactForm} from "../components/ContactForm";
+import { Questify } from "../components/Questify";
 
 function Home({ darkTheme }) {
     return (
@@ -203,6 +204,7 @@ function Home({ darkTheme }) {
                     </Typography>
                 </Grid>
                 <Sommaire darkTheme={darkTheme} />
+                <Questify darkTheme={darkTheme} />
                 <FinSnap darkTheme={darkTheme} />
                 <Memories darkTheme={darkTheme} />
                 <SmartBrains darkTheme={darkTheme} />
