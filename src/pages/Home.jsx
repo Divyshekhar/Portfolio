@@ -23,9 +23,9 @@ import { SmartBrains } from "../components/SmartBrains";
 import { RoboFriends } from "../components/RoboFriends";
 import { FinSnap } from "../components/FinSnap";
 import { Sommaire } from "../components/Sommaire";
-import {ContactForm} from "../components/ContactForm";
+import { ContactForm } from "../components/ContactForm";
 import { Questify } from "../components/Questify";
-
+import { D2sCafe } from "../components/D2scafe";
 function Home({ darkTheme }) {
     return (
 
@@ -54,11 +54,11 @@ function Home({ darkTheme }) {
                         I am a Fullstack Developer.<br />
                         My current Tech Stack include: <br />
                         <br />
-                         <Tooltip title="Golang" enterDelay={10} leaveDelay={30}>
+                        <Tooltip title="Golang" enterDelay={10} leaveDelay={30}>
                             <img
                                 src={Go_icon}
                                 alt="Golang"
-                                style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '10px', background: "white"}}
+                                style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '10px', background: "white" }}
                             />
                         </Tooltip>
                         <Tooltip title="Typescript" enterDelay={10} leaveDelay={30}>
@@ -161,7 +161,7 @@ function Home({ darkTheme }) {
                                 style={{ height: 'auto', width: '5%', borderRadius: '20%', marginRight: '10px' }}
                             />
                         </Tooltip>
-                       
+
                         <br />
                         <br />
                         Connect With Me : <br />
@@ -203,6 +203,7 @@ function Home({ darkTheme }) {
                         Projects
                     </Typography>
                 </Grid>
+                <D2sCafe darkTheme={darkTheme} />
                 <Sommaire darkTheme={darkTheme} />
                 <Questify darkTheme={darkTheme} />
                 <FinSnap darkTheme={darkTheme} />
