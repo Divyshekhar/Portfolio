@@ -25,7 +25,7 @@ import { FinSnap } from "../components/FinSnap";
 import { Sommaire } from "../components/Sommaire";
 import { ContactForm } from "../components/ContactForm";
 import { Questify } from "../components/Questify";
-import { D2sCafe } from "../components/D2scafe";
+import { D2sCafe } from "../components/D2sCafe";
 function Home({ darkTheme }) {
     return (
 
